@@ -11,7 +11,7 @@ class Database:
         # self.connection = psycopg2.connect(DATABASE_URI)
         # self.connection.set_isolation_level(ISOLATION_LEVEL_AUTOCOMMIT)
 
-        self.connection = sqlite3.connect('database.db')
+        self.connection = sqlite3.connect('data/database.db')
         self.cursor = self.connection.cursor()
 
         create_table_query = '''CREATE TABLE IF NOT EXISTS users(
